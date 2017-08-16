@@ -1,0 +1,157 @@
+footer {
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    padding: 45px 50px;
+    box-sizing: border-box;
+    z-index: 11;
+    position: absolute;
+    min-width: 1200px;
+    .footer_left{
+        @include mobile{
+            display: none;
+        }
+    }
+    @include mobile{
+        position: relative;
+        padding: 15px 20px 60px;
+        min-width: 100%;
+    }
+}
+.footer_left{
+        float: left;
+        .currency{
+            float: left;
+            height: 22px;
+            width: 280px;
+            position: relative;
+            margin: 0 30px 0 0;
+            cursor: pointer;
+            @include mobile{
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+            .c_line{
+                color: white;
+                
+                b{
+                    font-family: 'b';
+                    margin: 0 10px 0 0;
+                    display: inline-block;
+                }
+            }
+        }
+        ul{
+            float: left;
+        }
+        
+        .e-gov{
+            width: 80px;
+            height: 40px;
+            display: block;
+            background: url(../img/e-hokumet.png) no-repeat center center;
+            background-size: 100%;
+            float: left;
+            position: relative;
+            top: -10px;
+            margin: 0 0 0 20px;
+            @include mobile{
+                display: block;
+                background: url(../img/e-hokumet_b.png) no-repeat center center;
+                background-size: 100%;
+                position: relative;
+                top: 0;
+                margin: 10px 0 0 0;
+                float: none;
+                clear: both;
+            }
+        }
+        
+        li{
+            float: left;
+            margin: 0 25px 0 0;
+            a{
+                font-size: 1.1em;
+                color: white;
+                text-decoration: underline;
+            }
+        }
+        .contact{
+            position: relative;
+        }
+    }
+    
+    .footer_right{
+        float: right;
+        color: white;
+        @include mobile{
+            float: none;
+        }
+        .leo{
+            width: 170px;
+            height: 40px;
+            display: block;
+            background: url(../img/logo_tma.png) no-repeat center center;
+            background-size: 100%;
+            float: left;
+            position: relative;
+            top: -10px;
+            margin: 0 15px 0 0;
+            @include mobile{
+                width: 170px;
+                height: 40px;
+                float: none;
+                top: -10px;
+                margin: 0 auto;
+                clear: both;
+            }
+        }
+        .social{
+            float: left;
+            margin: 0 10px 0 0;
+            li{
+                float: left;
+                margin: 0 5px 0 0;
+                a{
+                    width: 20px;
+                    height: 20px;
+                    background-size: 100% !important;
+                    display: block;
+                    opacity: 1;
+                    -webkit-transition: all 0.3s ease-out;
+                    transition: all 0.3s ease-out;
+                    color: white;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                    i{
+                        font-size: 20px;
+                    }
+                }
+                @include mobile{
+                    float: none;
+                    margin: 0 5px;
+                    display: inline-block;
+                }
+            }
+            @include mobile{
+                float: none;
+                margin: 0 10px 0 0;
+                width: 100%;
+                text-align: center;
+                clear: both;
+            }
+        }
+        p{
+            float: left;
+            @include mobile{
+                float: none;
+                margin: 10px 0 0 0;
+                text-align: center;
+                position: relative;
+                right: auto;
+                top: auto;
+                clear: both;
+            }
+        }
+    }

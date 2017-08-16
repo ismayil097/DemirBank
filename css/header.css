@@ -1,0 +1,71 @@
+header {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  padding: 45px 50px;
+  box-sizing: border-box;
+  z-index: 11;
+  position: relative;
+  min-width: 1200px; }
+
+.home_page header {
+  position: absolute; }
+
+.head_left_side {
+  position: absolute;
+  left: 50px;
+  top: 52px; }
+
+.logo {
+  width: 229px;
+  height: 38px;
+  background: url(../img/logo.png) no-repeat center center;
+  display: block;
+  background-size: 100%;
+  float: left; }
+
+.langs {
+  float: left;
+  margin: 4px 10px; }
+
+.switch_content {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0; }
+  .switch_content a {
+    color: white;
+    font-size: 1.8em;
+    font-family: 'b'; }
+  .switch_content .header_switch {
+    width: 35px;
+    height: 17px;
+    background: white;
+    border-radius: 45px;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+    cursor: pointer; }
+
+.head_right_side {
+  position: absolute;
+  right: 50px;
+  top: 45px; }
+  .head_right_side .call {
+    width: 50px;
+    height: 50px;
+    background: url(../img/call.png) no-repeat center center white;
+    background-size: 28px;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+  .head_right_side .payment {
+    width: 50px;
+    height: 50px;
+    background: url(img/pay.png) no-repeat center center white;
+    background-size: 28px;
+    border-radius: 100%;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle; }
+
+/*# sourceMappingURL=header.css.map */

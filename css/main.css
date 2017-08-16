@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+@font-face {
+  font-family: b;
+  src: url(../fonts/bold-webfont.woff2); }
+body {
+  position: relative;
+  font: 14px/1.4 'r', Arial, sans-serif;
+  z-index: 0;
+  overflow-x: hidden;
+  min-height: 690px;
+  min-width: 1200px; }
+
+a {
+  text-decoration: none; }
+
+.stage_c {
+  background-color: #45eb00; }
+
+/*# sourceMappingURL=main.css.map */

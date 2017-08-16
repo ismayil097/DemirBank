@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@font-face {
+    font-family: b;
+    src: url(../fonts/bold-webfont.woff2);
+}
+
+@font-face {
+    font-family: r;
+    src: url(../fonts/regular-webfont.woff2);
+}
+
+body{
+    position: relative;
+    font: 14px/1.4 'r', Arial, sans-serif;
+    z-index: 0;
+    overflow-x: hidden;
+    min-height: 690px;
+    min-width: 1200px;
+    @include mobile{
+        min-width: 320px;
+        min-height: auto;
+    }
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+.stage_i{
+    @include mobile{
+    background: url(../img/home_stage_i_bg.jpg) no-repeat center center;
+    background-size: cover;
+    }
+}
+.stage_c{
+    background-color: #45eb00;
+    @include mobile{
+    background: url(../img/home_stage_c_bg.jpg) no-repeat center center;
+    background-size: cover; 
+    }
+}
+
+.pop_ups{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background: url(../img/search_bg.png) no-repeat center center rgba(51,41,41,0.9);
+    background-size: cover;
+    display: none;
+}
